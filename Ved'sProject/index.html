@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Import echarts library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Display logo -->
+      <img src="Dents.png" alt="logo" style="width: 40%" />
+    </div>
+
+    <div id="login">
+      <form>
+        <div class="login-signup-header">LOG IN</div>
+        <div
+          style=" padding: 10px 30%; display: flex; color: #38bd38; text-align: center; "
+          id="SignUpSuccessMsg"
+        ></div>
+        <div 
+          style="padding: 10px 30%; display: flex; color: red;"
+          id="loginFailMsg"
+        ></div>
+        <div 
+          style="padding: 10px 30%; display: flex; color: red;"
+          id="SignUpFailMsg">
+        </div>
+
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="usernameL"
+            name="usernameL"
+            required
+            style="padding: 5px; border: none; border-bottom: 1px solid grey"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="passwordL"
+            name="passwordL"
+            required
+            style="padding: 5px; border: none; border-bottom: 1px solid grey"
+          />
+        </div>
+        <div style="text-align: center">
+          <button type="button" class="btn login-signup-btn" onclick="Login()">
+            Log In
+          </button>
+          <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
+          <button
+            type="button"
+            class="btn login-signup-btn"
+            onclick="SignUpRedirect()"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="Functions.js"></script>
+  </body>
+</html>

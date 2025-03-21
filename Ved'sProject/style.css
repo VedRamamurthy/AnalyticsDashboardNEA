@@ -1,0 +1,104 @@
+body {background-color:#ffffff;
+  margin: 0;
+  padding: 0;}
+
+/* Style for the graph container */
+.graph-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 2px; /* Space between graphs */
+  padding: 20px;
+  justify-content: center; /* Center the content */
+}
+
+/*Scales graph container grid to reduce grid size depending on screensize*/
+@media screen and (max-width: 1800px){
+  .graph-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .graph-container{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+/* Style for individual graphs */
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+/* Ensure all graphs are the same size */
+.graph > div {
+  width: 100%;
+  height: 400px;
+}
+
+/* Titles for each graph */
+.graph-title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Head of the page with the brand colour as background*/
+.header {
+  padding: 20;
+  text-align: center;
+  background: #2c0b50;
+  color: white;
+  font-size: 30px;
+  font-family: "Open Sans" ;
+}
+
+/* Log out button*/
+
+.button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.input-group {
+  margin-bottom: 8px;
+  padding: 20px 30% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-signup-btn{
+  background: #2c0b50;
+  color: white;
+  border-color: #2c0b50;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.login-signup-header{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    color: #2c0b50;
+    font-size: 30px;
+    font-family: "Open Sans"
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+

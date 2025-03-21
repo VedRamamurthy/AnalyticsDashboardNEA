@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Import echarts library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Display logo -->
+      <img src="Dents.png" alt="logo" id="logo" style="width: 30%" />
+       <button onclick="logout()" style="float: inline-end;" class="button">LOGOUT&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1rem" width="2rem" viewBox="0 0 512 512"><path fill="#ffffff" d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg></button>
+    </div>
+    <!-- Graph Container -->
+    <div id="graph-content">
+      <div class="graph-container">
+        <div class="graph">
+          <div id="Membership_Count_Graph"></div>
+          <p class="graph-title">Membership Count</p>
+        </div>
+
+        <div class="graph">
+          <div id="Membership_Revenue_Graph"></div>
+          <p class="graph-title">Membership Revenue</p>
+        </div>
+
+        <div class="graph">
+          <div id="Treatment_Count_Graph"></div>
+          <p class="graph-title">Treatment Count</p>
+        </div>
+
+        <div class="graph">
+          <div id="Patient_Type_Graph"></div>
+          <p class="graph-title">Patient Type</p>
+        </div>
+
+        <div class="graph">
+          <div id="Revenue_By_Treatment_Graph"></div>
+          <p class="graph-title">Revenue By Treatment</p>
+        </div>
+
+        <div class="graph">
+          <div id="Treatment_Revenue_By_Month_Graph"></div>
+          <p class="graph-title">Treatment Reveneue By Month</p>
+        </div>
+
+        <div class="graph">
+          <div id="Patient_Gender_Graph"></div>
+          <p class="graph-title">Patient Gender</p>
+        </div>
+
+        <div class="graph">
+          <div id="Membership_Type_Graph"></div>
+          <p class="graph-title">Membership Type</p>
+        </div>
+
+        <div class="graph">
+          <div id="Year_Joined_Graph"></div>
+          <p class="graph-title">Membership Purchases By Year</p>
+        </div>
+      </div>
+
+      <!-- Last graph outside grid to fill entire space -->
+      <div class="graph">
+        <div id="Patient_Age_Graph"></div>
+        <p class="graph-title">Patient By Age Group</p>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

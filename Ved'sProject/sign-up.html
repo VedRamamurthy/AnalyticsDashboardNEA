@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Import echarts library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Display logo -->
+      <img src="Dents.png" alt="logo" style="width: 40%" />
+      <!--  <button class="button">Log Out -> </button> -->
+    </div>
+    <div id="register">
+      <form>
+        <div class="login-signup-header">SIGN UP</div>
+        <div 
+        style="padding: 10px 30%; display: flex; color: red;"
+        id="SignUpFailMsg">
+      </div>
+      <div
+      style=" padding: 10px 30%; display: flex; color: #38bd38; text-align: center; "
+      id="SignUpSuccessMsg"
+    ></div>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="usernameS"
+            name="usernameS"
+            required
+            style="padding: 5px; border: none; border-bottom: 1px solid #2c0b50"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="passwordS"
+            name="passwordS"
+            required
+            style="padding: 5px; border: none; border-bottom: 1px solid #2c0b50"
+          />
+        </div>
+        <div style="text-align: center">
+          <button type="button" class="btn login-signup-btn" onclick="SignUp()">
+            Sign Up
+          </button>
+          <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
+          <button
+            type="button"
+            class="btn login-signup-btn"
+            onclick="LoginRedirect()"
+          >
+            Log In
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="Functions.js"></script>
+  </body>
+</html>
