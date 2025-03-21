@@ -7,8 +7,8 @@ var sqlConfig = require('../config')
 router.get('/UserLogin',function (req, res) {
 
     var request = new sql.Request();
-    request.input("Username", sql.NVarChar(10000000000000), req.query.Username)
-    request.input("Password", sql.NVarChar(10000000000000), req.query.Password)
+    request.input("Username", sql.NVarChar(255), req.query.Username)
+    request.input("Password", sql.NVarChar(255), req.query.Password)
     request.execute("spUserLogin", function (error, results) {
         if (error) {
             console.log('error',results)
@@ -25,8 +25,8 @@ router.get('/UserLogin',function (req, res) {
 router.get('/UserRegister',function (req, res) {
 
     var request = new sql.Request();
-    request.input("Username", sql.NVarChar(10000000000000), req.query.Username)
-    request.input("Password", sql.NVarChar(10000000000000), req.query.Password)
+    request.input("Username", sql.NVarChar(255), req.query.Username)
+    request.input("Password", sql.NVarChar(255), req.query.Password)
     request.execute("spUserSignUp", function (error, results, feilds) {
         if (error) {
             res.json({ "success": false, "error": error });
